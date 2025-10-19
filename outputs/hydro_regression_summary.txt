@@ -1,0 +1,27 @@
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:      generation_smooth   R-squared:                       0.361
+Model:                            OLS   Adj. R-squared:                  0.311
+Method:                 Least Squares   F-statistic:                     7.329
+Date:                Sun, 19 Oct 2025   Prob (F-statistic):           0.000519
+Time:                        07:01:58   Log-Likelihood:                -355.68
+No. Observations:                  43   AIC:                             719.4
+Df Residuals:                      39   BIC:                             726.4
+Df Model:                           3                                         
+Covariance Type:            nonrobust                                         
+==============================================================================
+                 coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------
+const       5396.6163    151.564     35.606      0.000    5090.049    5703.184
+rain_mm      344.7055    164.713      2.093      0.043      11.543     677.868
+temp_c       486.4076    161.372      3.014      0.005     160.002     812.813
+spei         333.2187    166.402      2.002      0.052      -3.361     669.799
+==============================================================================
+Omnibus:                        0.954   Durbin-Watson:                   0.521
+Prob(Omnibus):                  0.621   Jarque-Bera (JB):                0.818
+Skew:                           0.325   Prob(JB):                        0.664
+Kurtosis:                       2.815   Cond. No.                         1.53
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.

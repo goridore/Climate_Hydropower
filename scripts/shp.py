@@ -16,7 +16,7 @@ volta_bbox = {
 volta = basins.cx[volta_bbox["minx"]:volta_bbox["maxx"], volta_bbox["miny"]:volta_bbox["maxy"]]
 
 # Save the filtered subset
-volta.to_file("./data/volta_basin.shp")
+volta.to_file("./outputs/volta_basin.shp")
 
 print(f"Saved {len(volta)} polygons likely within the Volta Basin region.")
 

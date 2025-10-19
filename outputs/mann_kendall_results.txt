@@ -1,0 +1,5 @@
+🌧 Rainfall Trend Test:
+Mann_Kendall_Test(trend='increasing', h=np.True_, p=np.float64(0.013517378296747706), z=np.float64(2.4698392405564076), Tau=np.float64(0.26245847176079734), s=np.float64(237.0), var_s=9130.333333333334, slope=np.float64(2.4749180100000028), intercept=np.float64(895.1602827899999))
+
+🌡 Temperature Trend Test:
+Mann_Kendall_Test(trend='increasing', h=np.True_, p=np.float64(6.7173306916856745e-09), z=np.float64(5.797842963001059), Tau=np.float64(0.6146179401993356), s=np.float64(555.0), var_s=9130.333333333334, slope=np.float64(0.027999531249999876), intercept=np.float64(26.924206677083337))

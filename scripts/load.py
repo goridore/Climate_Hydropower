@@ -9,7 +9,7 @@ from dask.diagnostics import ProgressBar
 xr.set_options(keep_attrs=True)
 
 # Load Volta Basin shapefile
-basin = gpd.read_file('./data/volta_basin.shp')
+basin = gpd.read_file('./outputs/volta_basin.shp')
 
 # Load datasets lazily
 rain = xr.open_dataset('./data/chirps-v2.0.monthly.nc', chunks={"time": 12})
@@ -44,8 +44,8 @@ spei_clip.load()
 # print(f"Valid values: {valid}/{total} ({valid/total*100:.2f}% non-NaN)")
 # Save clipped datasets efficiently
 with ProgressBar():
-#     rain_clip.to_netcdf('./outputs/volta_rain.nc', compute=True)
-#     temp_clip.to_netcdf('./outputs/volta_temp.nc', compute=True)
+    rain_clip.to_netcdf('./outputs/volta_rain.nc', compute=True)
+    temp_clip.to_netcdf('./outputs/volta_temp.nc', compute=True)
     spei_clip.to_netcdf('./outputs/volta_spei.nc')
 
 
